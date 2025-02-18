@@ -4,8 +4,12 @@ from pydantic import BaseModel, Field
 from openai import OpenAI
 import os
 import logging
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 # Set up logging configuration
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
